@@ -1,5 +1,5 @@
-def odd_concat(target):
-    return target[::2]
+def cross_concat(target1,target2):
+    return ''.join([i + j for i,j in zip(target1,target2)])
 
-def test_odd_concat():
-    assert odd_concat('パタトクカシー') == 'パトカー'
+def test_cross_concat():
+    assert cross_concat('パトカー','タクシー') == 'パタトクカシーー'
