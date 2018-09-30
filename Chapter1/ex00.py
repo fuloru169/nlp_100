@@ -1,5 +1,5 @@
-def reverse(str):
-    return str[::-1]
+def reverse(target):
+    return target[::-1]
 
 def test_reverse():
     assert reverse('stressed') == 'desserts'
